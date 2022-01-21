@@ -22,7 +22,6 @@ module.exports = {
               expiresIn: "24hr",
             }
           );
-
           res.status(200).json({
             message: "Login success",
             token: token,
@@ -43,11 +42,5 @@ module.exports = {
       });
       return next(err);
     }
-  },
-  logout: (req, res, next) => {
-    req.headers["authorization"];
-    res.status(200).json({
-      message: "Logout success",
-    });
   },
 };
